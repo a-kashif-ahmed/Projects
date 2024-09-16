@@ -92,7 +92,24 @@ body {
         border-color: transparent
     }
 }
+#down{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;  
+    padding: 10px 20px;
+    background-color: #388087;
+    color:#f3f3f3;
+    border: none;
+    border-radius: 9%;
+    box-shadow: 5px 5px grey;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#down a{
+    text-decoration: none;
+    color: inherit;
 
+}
 #typnam{
     color: #388087;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -477,7 +494,7 @@ footer {
     }
     
     .typing-demo {
-        width:284px;
+        width:287px;
         animation: typing 2s steps(15), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
