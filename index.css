@@ -1,0 +1,524 @@
+/* Preloader container */
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loader animation */
+.loader {
+    border: 1px solid #f3f3f3;
+
+    border-top: 3px solid #388087;
+
+    border-radius: 50%;
+    width: 5%;
+    height: 10%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    background-color: #f6f6f2;
+    margin: 0.1%;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+#title {
+    padding: 2%;
+    background-color: #c2edce;
+    margin: -1.7%;
+    background-image: "pexels";
+
+}
+
+#welcome {
+    color: #388087;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#authoris {
+    height: 1%;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 400px;
+    animation: typing 2s steps(15), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+#typnam{
+    color: #388087;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #c2edce;
+}
+
+#socials a {
+    padding: 2%;
+    margin: 0%;
+    display: block;
+    text-align: center;
+    max-width: 7%;
+}
+
+#socials a:hover {
+    color: black;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #badfe7;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+#nav a {
+    padding: 2%;
+    margin: 0%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #388087;
+   
+    
+
+}
+
+#nav a:hover {
+    background-color: #388087;
+    color: #f6f6f2;
+    font-size: large;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+#certi,
+#ab,
+#proj,
+#contact {
+    margin: 1%;
+    padding: 4%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+#ab p{
+   display: flex;
+   justify-content: center;
+}
+#proj{
+    margin-top: 1%;
+}
+
+#k1 {
+    width: 60%;
+    height: 80%;
+
+}
+
+#k1:hover {
+    width: 70%;
+    height: 90%;
+}
+
+#n2 {
+    display: flex;
+    justify-content: center;
+    color: #388087;
+}
+
+#n4 {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    color: #f6f6f2;
+
+}
+
+#e4,
+#e3,
+#e2 {
+    width: 60%;
+    height: 80%;
+    /* border:#388087 2px solid; */
+    position: relative;
+    cursor:pointer;
+}
+
+
+#finalp li,
+#attendp li {
+    padding: .5%;
+
+}
+
+#r6{
+    overflow: break-word;
+    position: relative;
+    padding: 7%;
+    margin:inherit;
+    background-color: #c2edce;
+    cursor:pointer;
+    color: black;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+#r5{
+    overflow: break-word;
+    position: relative;
+    padding: 7%;
+    margin:inherit;
+    background-color: #c2edce;
+    cursor:pointer;
+    color: black;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+#r4 {
+    overflow: break-word;
+    position: relative;
+    padding: 7%;
+    margin:inherit;
+    background-color: #c2edce;
+    cursor:pointer;
+    color: black;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+#huihui {
+    width: 30%;
+    height: 10%;
+
+
+}
+
+#edu {
+    padding: 1%;
+    max-height: .1%;
+
+}
+
+#i3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    padding-bottom: 7%;
+}
+
+#i4 {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    padding: 3%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    list-style: disc;
+}
+
+#linked,
+#nptel,
+#infosys {
+    padding: 5%;
+    margin: 3%;
+    box-shadow: 5px 5px 5px 5px grey;
+    background-color: #388087;
+    color: #f6f6f2;
+}
+
+
+
+#skills {
+    border-top: #388087 3px dotted;
+    border-bottom: #388087 3px dotted;
+    box-shadow: 5px 5px 5px 5px grey;
+    background-color: #6fb3b8;
+
+
+}
+
+#skillset {
+    display: flex;
+    position: relative;
+    animation: moc 5s linear infinite;
+}
+#s1,
+#s2,
+#s3,
+#s4,
+#s5,
+#s6,
+#s7,
+#s8 {
+    width: 10%;
+    height: 10%;
+    margin: 2%;
+
+}
+
+#s9 {
+    width: 7.5%;
+    height: 3%;
+    margin: 2%;
+}
+
+#finalp,
+#attendp {
+    padding: 3%;
+    margin: 3%;
+    background-color: #6fb3b8;
+    color: #f3f3f3;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+#f1,
+#f2 :hover {
+    border: 4px black solid;
+}
+
+#cd1,
+#cd2,
+#cd3 {
+    background-color: #f3f3f3;
+    color: #388087;
+}
+
+
+#contact {
+    margin: 0%;
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+    margin-top: 0%;
+    padding-top: 0%;
+    color: #f6f6f2;
+    background-color: #6fb3b8;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+
+
+}
+
+#ucm {
+    display: flex;
+    justify-content: left;
+}
+
+#form {
+    margin: 0%;
+    margin-right: 0%;
+    padding-right: 0%;
+    padding: 2%;
+    display: flex;
+    justify-content: right;
+}
+
+form input {
+    box-shadow: 5px 5px 5px 5px black;
+    font-style: oblique;
+}
+
+#submit {
+    background-color: #c2edce;
+    color: black;
+}
+
+#gcq {
+    background-color: #6fb3b8;
+    margin: -1.2%;
+}
+
+#x1 {
+    width: 10%;
+    height: 35%;
+
+}
+
+#x1:hover {
+    width: 15%;
+    height: 20%;
+}
+#x2 {
+    width: 3%;
+    height: 5%;
+    border-radius: 200%;
+    margin-right: 2%;
+    
+
+}
+
+#x2:hover {
+    width: 9%;
+    height: 15%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0%;
+}
+
+
+@keyframes moc {
+    0% {
+        transform: translate(0%, 0);
+
+    }
+
+    100% {
+        transform: translate(-55%, 0);
+
+
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    #preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Loader animation */
+    .loader {
+        border: 1px solid #f3f3f3;
+    
+        border-top: 3px solid #388087;
+    
+        border-radius: 50%;
+        width:10%;
+        height: 6.5%;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    #html{
+        scroll-behavior:smooth;
+        overflow:hidden;
+        margin: -1%;
+    }
+
+    #authoris {
+        height: 1%;
+        /* This part is important for centering */
+        display: grid;
+        place-items: center;
+    }
+    
+    .typing-demo {
+        width:284px;
+        animation: typing 2s steps(15), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid black;
+        font-family: monospace;
+        font-size: 23px;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+   
+    #i4 {
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+        padding: 1%;
+        overflow: hidden;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+        list-style: disc;
+    }
+   
+   #contact td a{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+   }
+   #contact{
+    display: flex;
+    flex-direction: column;
+   }
+
+  }
+  
