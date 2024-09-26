@@ -107,5 +107,3 @@ $(document).ready(async function () {
     // })
 //})
 
-/*   Nodejs */
-
