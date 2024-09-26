@@ -329,7 +329,7 @@ body {
     height: 3%;
     margin: 2%;
 }
-
+#urlp,
 #finalp,
 #attendp {
     padding: 3%;
@@ -337,6 +337,10 @@ body {
     background-color: #6fb3b8;
     color: #f3f3f3;
     box-shadow: 5px 5px 5px 5px grey;
+}
+#urlp a{
+    text-decoration: none;
+    color: inherit;
 }
 
 #f1,
