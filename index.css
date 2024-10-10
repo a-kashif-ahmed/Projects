@@ -47,6 +47,7 @@ body {
     padding: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow-x: hidden;
+
 }
 
 #title {
@@ -57,11 +58,75 @@ body {
 
 }
 
+/* From Uiverse.io by KshitijAdhikaree */ 
+/* The switch - the box around the slider */
+ /* .switch-container {
+    position: fixed;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+
+        border: #388087 2px solid;
+        border-radius: 30px;
+        top: 2%;
+        right: 2%; 
+
+  }
+
+  
+  /* Hide default HTML checkbox  */
+  /* .switch-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  The slider 
+  .switch-container .slider {
+    
+    --background: linear-gradient(to right, inherit);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background);
+    transition: background-color 0.5s;
+    border-radius: 30px;
+  
+  }
+  
+  .switch-container .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 15px -4px 0px 15px #f8ea27;
+    background: var(--background);
+
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+
+  
+  .switch-container input:checked + .slider {
+    background-color: #000;
+  }
+  
+  .switch-container input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 8px -4px 0px 0px #f8f8f4;
+  }
+   */ 
 #welcome {
     color: #388087;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content: center;
+    animation: slideIn .85s  ease-in-out;
 }
 
 #authoris {
@@ -80,6 +145,11 @@ body {
     font-family: monospace;
     font-size: 2em;
 }
+
+/* .dark-mode {
+    background-color: black;
+    color: white;
+  } */
 
 @keyframes typing {
     from {
@@ -104,6 +174,7 @@ body {
     box-shadow: 5px 5px grey;
     font-size: 16px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: slideIn .85s  ease-in-out;
 }
 #down a{
     text-decoration: none;
@@ -121,6 +192,7 @@ body {
     justify-content: center;
     overflow: hidden;
     background-color: #c2edce;
+
 }
 
 #socials a {
@@ -129,6 +201,7 @@ body {
     display: block;
     text-align: center;
     max-width: 7%;
+    animation: slideIn .85s  ease-in-out;
 }
 
 #socials a:hover {
@@ -141,6 +214,7 @@ body {
     overflow: hidden;
     background-color: #badfe7;
     box-shadow: 5px 5px 5px 5px grey;
+    
 }
 
 #nav a {
@@ -150,7 +224,7 @@ body {
     text-align: center;
     text-decoration: none;
     color: #388087;
-   
+    animation: slideIn 0.85s  ease-in-out;
     
 
 }
@@ -174,7 +248,11 @@ body {
 #ab p{
    display: flex;
    justify-content: center;
+
+ 
+   
 }
+
 #proj{
     margin-top: 1%;
 }
@@ -212,6 +290,7 @@ body {
     /* border:#388087 2px solid; */
     position: relative;
     cursor:pointer;
+    animation: slideIn 1s ease-in-out;
 }
 
 #urlp li,
@@ -255,13 +334,14 @@ body {
 #huihui {
     width: 30%;
     height: 10%;
-
+    animation: slideX 1s ease-in-out;
 
 }
 
 #edu {
     padding: 1%;
     max-height: .1%;
+    
 
 }
 
@@ -272,6 +352,7 @@ body {
     margin-left: 10%;
     margin-bottom: 7%;
     padding-bottom: 7%;
+
 }
 
 #i4 {
@@ -292,6 +373,7 @@ body {
     box-shadow: 5px 5px 5px 5px grey;
     background-color: #388087;
     color: #f6f6f2;
+    animation: slideX 1s ease-in-out;
 }
 
 
@@ -335,6 +417,7 @@ body {
     background-color: #6fb3b8;
     color: #f3f3f3;
     box-shadow: 5px 5px 5px 5px grey;
+    animation: slideIn 1.7s  ease-in-out;
 }
 
 #urlp a{
@@ -366,7 +449,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
-
+    animation: slideX 1s ease-in-out;
 
 }
 
@@ -445,6 +528,7 @@ footer {
 
 
 }
+
 
 @media only screen and (max-width: 500px) {
     #preloader {
@@ -540,4 +624,23 @@ footer {
    }
 
   }
-  
+  @keyframes slideIn {
+    0% {
+        transform: translateY(75%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideX {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

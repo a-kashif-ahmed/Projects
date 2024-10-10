@@ -106,4 +106,11 @@ $(document).ready(async function () {
     //     $("#c2").hide();
     // })
 //})
+// function myFunction() {
+//     var element = document.body;
+//     element.classList.toggle("@medi");
+//     divs.forEach(div => {
+//         div.classList.toggle('dark-mode');
+//     });
 
+//  }
