@@ -531,6 +531,7 @@ footer {
 
 
 @media only screen and (max-width: 500px) {
+    
     #preloader {
         position: fixed;
         left: 0;
@@ -622,9 +623,65 @@ footer {
     display: flex;
     flex-direction: column;
    }
+   #e4,
+#e3,
+#e2 {
+    animation: slideIn 1s ease-in-out;
+}
+#socials a {
+    animation: slideIn .85s  ease-in-out;
+}
+#down{
+    animation: slideIn .85s  ease-in-out;
+}   
+#welcome {
+    animation: slideIn .85s  ease-in-out;
+}
+#urlp,#finalp,#attendp {
+    animation: slideIn 1.7s  ease-in-out;
+}
+
+#contact {
+    animation: slideX 1s ease-in-out;
+
+}
+
+#linked,
+#nptel,
+#infosys {
+    animation: slideX 1s ease-in-out;
+}
+#huihui {
+    animation: slideX 1s ease-in-out;
+
+}
+#nav a {
+ 
+    animation: slideIn 0.85s  ease-in-out;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(75%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideX {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
   }
-  @keyframes slideIn {
+@keyframes slideIn {
     0% {
         transform: translateY(75%);
         opacity: 0;
