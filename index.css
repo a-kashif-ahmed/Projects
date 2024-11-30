@@ -43,7 +43,7 @@ html {
 
 body {
     background-color: #f6f6f2;
-    margin: 0.1%;
+    margin: 0%;
     padding: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow-x: hidden;
@@ -391,7 +391,14 @@ body {
     display: flex;
     position: relative;
     animation: moc 5s linear infinite;
+
 }
+#skillset:hover{
+    cursor: pointer;
+    animation-play-state: paused;
+    
+}
+
 #s1,
 #s2,
 #s3,
@@ -479,7 +486,7 @@ form input {
 
 #gcq {
     background-color: #6fb3b8;
-    margin: -1.2%;
+    margin: -1.0%;
 }
 
 #x1 {
@@ -493,8 +500,8 @@ form input {
     height: 20%;
 }
 #x2 {
-    width: 3%;
-    height: 5%;
+    width: 10%;
+    height: 7%;
     border-radius: 200%;
     margin-right: 2%;
     
@@ -502,8 +509,8 @@ form input {
 }
 
 #x2:hover {
-    width: 9%;
-    height: 15%;
+    width: 15%;
+    height: 20%;
 }
 
 footer {
