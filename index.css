@@ -50,7 +50,12 @@ body {
     padding: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow-x: hidden;
-
+    
+    
+}
+.everything{
+    margin-left: 15%;
+    max-width: 90%;
 }
 
 #title {
@@ -140,7 +145,7 @@ body {
 }
 
 .typing-demo {
-    width: 400px;
+    width: 285px;
     animation: typing 2s steps(15), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -225,14 +230,22 @@ body {
 #nav {
     display: flex;
     justify-content: center;
-    overflow: hidden;
     background-color: #badfe7;
     box-shadow: 5px 5px 5px 5px grey;
-    
+    margin-right:70% ;
+    display: block;
+    position:fixed;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width:thin;
+    scrollbar-color: #388087;
+    min-width: 15%;
+
 }
 
 #nav a {
-    padding: 2%;
+    padding: 16%;
     margin: 0%;
     display: block; 
     text-align: center;
@@ -240,6 +253,7 @@ body {
     color: #388087;
     animation: slideIn 0.85s  ease-in-out;
     border-radius: 10px;
+
     
 
 }
@@ -404,9 +418,10 @@ body {
 #skills {
     border-top: #388087 3px dotted;
     border-bottom: #388087 3px dotted;
+
     box-shadow: 5px 5px 5px 5px grey;
     background-color: #6fb3b8;
-
+    overflow: hidden;
 
 }
 
@@ -559,7 +574,8 @@ footer {
     }
 
     100% {
-        transform: translate(-55%, 0);
+        transform: translate(-37%, 0);
+       
 
 
     }
@@ -617,15 +633,36 @@ footer {
         display: grid;
         place-items: center;
     }
+    #everything{
+        margin-left: 15%;
+        max-width: 90%;
+    }
+    #nav{
+        margin-right:70% ;
+    display: block;
+    position:fixed;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width:thin;
+    scrollbar-color: #388087;
+    min-width: 15%;
     
+
+    }
+    #nav a{
+        padding-bottom: 20%;
+        padding-top: 20%;
+        padding-left: .2%;
+    }
     .typing-demo {
-        width:287px;
+        width:175px;
         animation: typing 2s steps(15), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid black;
         font-family: monospace;
-        font-size: 23px;
+        font-size: 20px;
     }
     
     @keyframes typing {
@@ -639,12 +676,15 @@ footer {
             border-color: transparent
         }
     }
+    #edu{
+        margin-left: 5%;
+    }
    
     #i4 {
         display: flex;
         flex-direction: column;
-        margin: 1%;
-        padding: 1%;
+        margin-left: 10%;
+        padding: 0%;
         overflow: hidden;
         margin-bottom: 0%;
         padding-bottom: 0%;
@@ -657,10 +697,12 @@ footer {
     width: 50%;
     height: 70%;
    }
-   #contact{
+   #contact, footer{
     display: flex;
     flex-direction: column;
+    margin-left: 20%;
    }
+
    #e4,
 #e3,
 #e2 {
@@ -676,6 +718,7 @@ footer {
     animation: slideIn .85s  ease-in-out;
 }
 #urlp,#finalp,#attendp {
+    margin: 13%;
     animation: slideIn 1.7s  ease-in-out;
 }
 
