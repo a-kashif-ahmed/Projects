@@ -1,4 +1,7 @@
 /* Preloader container */
+:root{
+    --ani : slideIn 1s ease-in-out
+}
 #preloader {
     position: fixed;
     left: 0;
@@ -145,6 +148,14 @@ body {
     font-family: monospace;
     font-size: 2em;
 }
+#react-root{
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 18px;
+    color: #1b646b;
+}
 
 /* .dark-mode {
     background-color: black;
@@ -155,7 +166,9 @@ body {
     from {
         width: 0
     }
+   
 }
+
 
 @keyframes blink {
     50% {
@@ -365,6 +378,7 @@ body {
     list-style: disc;
 }
 
+
 #linked,
 #nptel,
 #infosys {
@@ -373,8 +387,10 @@ body {
     box-shadow: 5px 5px 5px 5px grey;
     background-color: #388087;
     color: #f6f6f2;
-    animation: slideX 1s ease-in-out;
+    animation: slideIn 1s ease-in-out;
+    
 }
+
 
 
 
@@ -458,7 +474,8 @@ body {
     margin-right: 0;
     animation: slideX 1s ease-in-out;
 
-}
+} 
+
 
 #ucm {
     display: flex;
@@ -510,7 +527,7 @@ form input {
 
 #x2:hover {
     width: 15%;
-    height: 20%;
+    height: 15%;
 }
 
 footer {

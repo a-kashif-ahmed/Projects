@@ -30,6 +30,9 @@
                 <input type="checkbox" onclick="myFunction()">
                 <span class="slider"></span>
             </label> -->
+            <div id="react-root">
+                         
+            </div>
 
         </div>
 
@@ -256,6 +259,31 @@
         </div>
     </div>
     <footer> &circledR;All Rights Reserved.</footer>
+    
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script>
+    const { useState, useEffect } = React;
+
+    // React Component
+    const App = () => {
+      const [textIndex, setTextIndex] = useState(0);
+      const texts = ["Full-Stack Web Dev", "Software Dev","AI Wizard","Application Dev"];
+
+      useEffect(() => {
+        const interval = setInterval(() => {
+          setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        }, 3000); // Change text every 5 seconds
+        return () => clearInterval(interval); // Cleanup interval on unmount
+      }, []);
+
+      return React.createElement('h4', null, texts[textIndex]);
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('react-root'));
+    root.render(React.createElement(App));
+  </script>
+
 </body>
 
 </html>
