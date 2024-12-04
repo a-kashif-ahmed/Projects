@@ -691,6 +691,12 @@ footer {
         list-style: disc;
     }
    
+   #skills{
+    margin: inherit;
+    overflow: hidden;
+
+   }
+ 
    #contact td a{
     display: flex;
     flex-direction: column;
