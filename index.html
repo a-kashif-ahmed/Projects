@@ -10,9 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Load custom JavaScript file after jQuery -->
     <script src="index.js" defer></script>
-    <script> 
-        import React from 'react'
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -61,7 +59,8 @@
     </div>
  
     <div id="ab">
-        <h4 id="n2">About me:</h4>
+        <h4 id="n2">About Me:</h4>
+        <div class="abo">
         <p>
         <ul id="aba">Recent Computer Science graduate with a solid foundation in software development and web
             technologies.Proficient in full-stack development tools and deep learning frameworks to create innovative
@@ -69,6 +68,8 @@
             extracurricular
             settings</ul>
         </p>
+        <img src="Resources/DSC_0002.JPG" id="x2" title="A Kashif Ahmed" />
+    </div>
     </div>
     <div id="skill"></div>
     <h4 id="n2"> Skills :</h4>
@@ -132,8 +133,21 @@
         <!-- <div class="card">
 <embed src="https://urlshortner-kashif.vercel.app" height="100px" width="700px"/>
         </div> -->
+        <div id="blogp" >
+            <h3>Blogging App </h3>
+            <img class="pimg" src="Resources\blogspace.png" />
+            <h5>Technologies Used : Nodejs, ExpressJs, MongoDB, BootStrap</h5>
+            <li>Developed a blogging platform enabling post creation, viewing, and commenting, boosting user engagement</li>
+            <li> Secured accounts using SHA-256 hashing, protecting user data and enhancing authentication reliability
+            </li>
+            <li>Optimized backend efficiency with async functions and reusable templates, improving scalability by 60%</li>
+           
+            <ul><a href="https://#"><img src="Resources/git_nav.png"
+                target="_blank" width="5%" height="3%" /></a></a></ul>
+        </div>
         <div id="urlp" >
             <h3>A URL Shortener with IP Tracking </h3>
+            <img class="pimg" src="Resources\urlshortener.png" />
             <h5>Technologies Used : Nodejs, ExpressJs, MongoDB</h5>
             <li>Custom URL Generation: Uses a unique short ID for easy link sharing</li>
             <li>IP Address Tracking: Integrates IP-based tracking to associate shortened links with user information
@@ -146,6 +160,7 @@
         </div>
         <div id="finalp">
             <h3>Modern Iris Recognition Voting System Using Deep Learning</h3>
+            <img class="pimg" src="Resources\MIRVS.png" />
             <h5>Language Used : Python</h5>
             <li> Engineered a system as a final semester project in collaboration with 4 team members
             </li>
@@ -226,10 +241,10 @@
     <div id="gcq">
         <h4 id="n4">Contact Form : </h4>
         <div id="contact">
-            <img src="Resources/DSC_0002.JPG" id="x2" title="A Kashif Ahmed" />
+           
             <h3>Connect With Me Here:</h3>
             <div id="ucm">
-                <img href="" id="" alt="" hidden>
+                
                 <table>
                     <tr>
                         <td><label><a href="mailto:akashifahmed31@gmail.com" id="" target="_blank"><img
@@ -258,8 +273,7 @@
                             <td><input id="mobile" type="number" placeholder="Mobile" /></td>
                         </tr>
                         <tr>
-                            <td><textarea style="resize: none;box-shadow: 5px 5px 5px 5px black;font-style: oblique;"
-                                    rows="7" cols="30" placeholder="Description"></textarea></td>
+                            <td><input type="text" placeholder="Subject" /></td>
                         </tr>
                         <tr>
                             <td><input type="submit" id="submit" name="submit" onclick="" /></td>

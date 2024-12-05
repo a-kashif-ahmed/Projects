@@ -45,7 +45,8 @@ html {
 
 
 body {
-    background-color: #f6f6f2;
+    background: rgb(54,249,247);
+    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
     margin: 0%;
     padding: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -60,7 +61,8 @@ body {
 
 #title {
     padding: 2%;
-    background-color: #c2edce;
+    background: rgb(54,249,247);
+background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
     margin: -1.7%;
     background-image: "pexels";
 
@@ -130,7 +132,8 @@ body {
   }
    */ 
 #welcome {
-    color: #388087;
+    color: #333333; /* Example for secondary text */
+
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -159,7 +162,8 @@ body {
     overflow: hidden;
     font-family: monospace;
     font-size: 18px;
-    color: #1b646b;
+    color: #333333; /* Example for secondary text */
+
 }
 
 /* .dark-mode {
@@ -200,7 +204,8 @@ body {
 
 }
 #typnam{
-    color: #388087;
+    color: #333333; /* Example for secondary text */
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -209,7 +214,8 @@ body {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-color: #c2edce;
+    background: rgb(54,249,247);
+    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
 
 }
 
@@ -230,7 +236,8 @@ body {
 #nav {
     display: flex;
     justify-content: center;
-    background-color: #badfe7;
+    background: rgb(54,249,247);
+    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
     box-shadow: 5px 5px 5px 5px grey;
     margin-right:70% ;
     display: block;
@@ -250,17 +257,23 @@ body {
     display: block; 
     text-align: center;
     text-decoration: none;
-    color: #388087;
+    color: #333333; /* Example for secondary text */
     animation: slideIn 0.85s  ease-in-out;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
     
 
 }
 
 #nav a:hover {
-    background-color: #388087;
-    color: #f6f6f2;
+    background: rgb(54,249,247);
+    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+color: #1A202C; /* Example for text */
+
+
     font-size: large;
     box-shadow: 5px 5px 5px 5px grey;
 }
@@ -274,14 +287,22 @@ body {
     margin-top: 0%;
     padding-top: 0%;
 }
-#ab p{
-   display: flex;
-   justify-content: center;
 
- 
-   
+#ab{
+    box-shadow: 5px 5px 5px 5px grey;
+    border-radius:10px ;
 }
-
+.abo{
+    display: flex;
+}
+#ab p{
+    display: flex;
+    justify-content: center;  
+ }
+#ab h4{
+    
+    margin-top: 4%;
+}
 #proj{
     margin-top: 1%;
 }
@@ -301,14 +322,15 @@ body {
 #n2 {
     display: flex;
     justify-content: center;
-    color: #388087;
+    color: #1A202C; /* Example for text */
+
 }
 
 #n4 {
     padding: 1%;
     display: flex;
     justify-content: center;
-    color: #f6f6f2;
+    color: #333333;
 
 }
 
@@ -321,9 +343,11 @@ body {
     position: relative;
     cursor:pointer;
     animation: slideIn 1s ease-in-out;
+    
 }
 
 #urlp li,
+#blogp li,
 #finalp li,
 #attendp li {
     padding: .5%;
@@ -335,10 +359,15 @@ body {
     position: relative;
     padding: 7%;
     margin:inherit;
-    background-color: #c2edce;
+
     cursor:pointer;
     color: black;
-    box-shadow: 5px 5px 5px 5px grey;
+    /* background: rgb(54,249,247); */
+    background: inherit;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 10px solid linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%) ;
     border-radius: 10px;
 }
 #r5{
@@ -346,10 +375,13 @@ body {
     position: relative;
     padding: 7%;
     margin:inherit;
-    background-color: #c2edce;
+    background-color: #c2edce;  background: inherit;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 10px solid linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
     cursor:pointer;
     color: black;
-    box-shadow: 5px 5px 5px 5px grey;
     border-radius: 10px;
 }
 #r4 {
@@ -357,10 +389,13 @@ body {
     position: relative;
     padding: 7%;
     margin:inherit;
-    background-color: #c2edce;
+    background: inherit;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 10px solid linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
     cursor:pointer;
     color: black;
-    box-shadow: 5px 5px 5px 5px grey;
     border-radius: 10px;
 }
 
@@ -375,6 +410,7 @@ body {
     padding: 1%;
     max-height: .1%;
     
+    
 
 }
 
@@ -385,6 +421,7 @@ body {
     margin-left: 10%;
     margin-bottom: 7%;
     padding-bottom: 7%;
+  
 
 }
 
@@ -404,9 +441,13 @@ body {
 #infosys {
     padding: 5%;
     margin: 3%;
-    box-shadow: 5px 5px 5px 5px grey;
-    background-color: #388087;
-    color: #f6f6f2;
+    background: inherit;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 10px solid linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+color: #333333; /* Example for secondary text */
+
     animation: slideIn 1s ease-in-out;
     border-radius: 10px;
     
@@ -419,8 +460,11 @@ body {
     border-top: #388087 3px dotted;
     border-bottom: #388087 3px dotted;
 
-    box-shadow: 5px 5px 5px 5px grey;
-    background-color: #6fb3b8;
+    background: inherit;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 10px solid linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
     overflow: hidden;
 
 }
@@ -462,19 +506,30 @@ body {
     height: 3%;
     margin: 2%;
 }
-#urlp,#finalp,#attendp {
+#urlp,#finalp,#attendp,#blogp {
     padding: 3%;
     margin: 3%;
-    background-color: #6fb3b8;
-    color: #f3f3f3;
-    box-shadow: 5px 5px 5px 5px grey;
+    background: inherit;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 10px solid linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+color: #333333; /* Example for secondary text */
+
     border-radius: 10px;
     animation: slideIn 1.7s  ease-in-out;
 }
 
-#urlp a{
+#urlp a, #blogp a{
     text-decoration: none;
     color: inherit;
+}
+.pimg{
+    margin: 2.5%;
+    padding: 2.5%;
+    width:70%;
+    height: 50%;
+    border-radius: 10px;
 }
 #f1,
 #f2 :hover {
@@ -484,20 +539,22 @@ body {
 #cd1,
 #cd2,
 #cd3 {
-    background-color: #f3f3f3;
-    color: #388087;
+    background-color: inherit;
+    color: #333333;
 }
 
 
 #contact {
-    margin: 0%;
+    margin: -1%;
     display: flex;
     justify-content: right;
     padding: 2%;
     margin-top: 0%;
     padding-top: 0%;
-    color: #f6f6f2;
-    background-color: #6fb3b8;
+    color: #333333; /* Example for secondary text */
+
+    background: rgb(54,249,247);
+    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
@@ -521,17 +578,19 @@ body {
 }
 
 form input {
-    box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 5px 5px 5px 5px inherit;
+    background-color: inherit;
     font-style: oblique;
 }
 
 #submit {
-    background-color: #c2edce;
-    color: black;
+    background-color:inherit;
+    color: #333333;
 }
 
 #gcq {
-    background-color: #6fb3b8;
+    background: rgb(54,249,247);
+    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
     margin: -1.0%;
 }
 
@@ -550,6 +609,7 @@ form input {
     height: 7%;
     border-radius: 200%;
     margin-right: 2%;
+ 
     
 
 }
@@ -564,6 +624,7 @@ footer {
     color: white;
     text-align: center;
     margin: 0%;
+    margin-right: -2%;
 }
 
 
@@ -638,21 +699,22 @@ footer {
         max-width: 90%;
     }
     #nav{
-        margin-right:70% ;
+    margin-right:85% ;
     display: block;
     position:fixed;
     overflow: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scrollbar-width:thin;
-    scrollbar-color: #388087;
+    scrollbar-color: inherit;
+    
     min-width: 15%;
     
 
     }
     #nav a{
-        padding-bottom: 20%;
-        padding-top: 20%;
+        padding-bottom: 25%;
+        padding-top: 25%;
         padding-left: .2%;
     }
     .typing-demo {
@@ -692,7 +754,7 @@ footer {
     }
    
    #skills{
-    margin: inherit;
+    margin-left:28px;
     overflow: hidden;
 
    }
@@ -706,9 +768,17 @@ footer {
    #contact, footer{
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    margin-left: 27px;
+    padding-left: 5%;
    }
-
+#x1{
+    width:70%;
+    height: 50%;
+}
+#x1:hover{
+    width:90%;
+    height: 70%;
+}
    #e4,
 #e3,
 #e2 {
@@ -723,7 +793,7 @@ footer {
 #welcome {
     animation: slideIn .85s  ease-in-out;
 }
-#urlp,#finalp,#attendp {
+#urlp,#finalp,#attendp,#blogp {
     margin: 13%;
     animation: slideIn 1.7s  ease-in-out;
 }
