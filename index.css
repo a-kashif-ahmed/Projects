@@ -45,8 +45,8 @@ html {
 
 
 body {
-    background: rgb(54,249,247);
-    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+    background: rgb(240,245,245);
+background: linear-gradient(90deg, rgba(240,245,245,1) 30%, rgba(125,245,245,1) 100%);
     margin: 0%;
     padding: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -61,8 +61,8 @@ body {
 
 #title {
     padding: 2%;
-    background: rgb(54,249,247);
-background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+    background: rgb(240,245,245);
+    background: linear-gradient(90deg, rgba(240,245,245,1) 30%, rgba(125,245,245,1) 100%);
     margin: -1.7%;
     background-image: "pexels";
 
@@ -214,8 +214,8 @@ background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background: rgb(54,249,247);
-    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+    background: rgb(240,245,245);
+background: linear-gradient(90deg, rgba(240,245,245,1) 30%, rgba(125,245,245,1) 100%);
 
 }
 
@@ -236,8 +236,8 @@ background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64
 #nav {
     display: flex;
     justify-content: center;
-    background: rgb(54,249,247);
-    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+    background: rgb(240,245,245);
+background: linear-gradient(90deg, rgba(240,245,245,1) 30%, rgba(125,245,245,1) 100%);
     box-shadow: 5px 5px 5px 5px grey;
     margin-right:70% ;
     display: block;
@@ -554,8 +554,8 @@ color: #333333; /* Example for secondary text */
     padding-top: 0%;
     color: #333333; /* Example for secondary text */
 
-    background: rgb(54,249,247);
-    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+    background: rgb(240,245,245);
+background: linear-gradient(90deg, rgba(240,245,245,1) 30%, rgba(125,245,245,1) 100%);
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
@@ -590,8 +590,8 @@ form input {
 }
 
 #gcq {
-    background: rgb(54,249,247);
-    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+    background: rgb(240,245,245);
+background: linear-gradient(90deg, rgba(240,245,245,1) 30%, rgba(125,245,245,1) 100%);
     margin: -1.0%;
 }
 
@@ -720,7 +720,7 @@ footer {
         padding-left: .2%;
     }
     .typing-demo {
-        width:180px;
+        width:185px;
         animation: typing 2s steps(15), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
