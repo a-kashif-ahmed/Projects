@@ -248,6 +248,7 @@ background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64
     scrollbar-width:thin;
     scrollbar-color: #388087;
     min-width: 15%;
+    height: 100%;
 
 }
 
@@ -719,7 +720,7 @@ footer {
         padding-left: .2%;
     }
     .typing-demo {
-        width:175px;
+        width:180px;
         animation: typing 2s steps(15), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
@@ -755,7 +756,7 @@ footer {
     }
    
    #skills{
-    margin-left:28px;
+    margin-left:27px;
     overflow: hidden;
 
    }
