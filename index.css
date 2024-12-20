@@ -252,6 +252,7 @@ background: linear-gradient(90deg, rgba(240,245,245,1) 30%, rgba(125,245,245,1) 
 
 }
 
+
 #nav a {
     padding: 16%;
     margin: 0%;
@@ -267,8 +268,8 @@ background: linear-gradient(90deg, rgba(240,245,245,1) 30%, rgba(125,245,245,1) 
 }
 
 #nav a:hover {
-    background: rgb(54,249,247);
-    background: linear-gradient(90deg, rgba(248,249,54,1)  0%, rgba(54,249,247,1) 64%);
+    background: rgb(240,245,245);
+    background: linear-gradient(90deg, rgb(227, 243, 243) 30%, rgb(109, 243, 243) 100%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
