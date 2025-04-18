@@ -262,7 +262,7 @@
                     </tr>
 
                 </table>
-                <form action="" method="get">
+                <form action="https://formspree.io/f/xqapvged" method="get">
                     <table>
                         <tr>
                             <td><input id="name" type="text" placeholder="Name" /></td>
@@ -274,13 +274,29 @@
                             <td><input id="mobile" type="number" placeholder="Mobile" /></td>
                         </tr>
                         <tr>
-                            <td><input type="text" placeholder="Subject" /></td>
+                            <td><input id="subject" type="text" placeholder="Subject" /></td>
+                        </tr>
+                        <tr>
+                            <td><select name="service" id="service-type">
+                                <option value="Website_dev">Develop a website</option>
+                                <option value="App_dev">Develop an App</option>
+                                <option value="fix_bugs">Fix broken app/site</option>
+                                <option value="Software_dev">Develop a software</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea rows="2" cols="3" placeholder="mini description"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Deadline: (UTC)<input type="datetime-local" name="Deadline"></td>
                         </tr>
                         <tr>
                             <td><input type="submit" id="submit" name="submit" onclick="" /></td>
                         </tr>
                     </table>
-                    <p>This is a static website</p>
+                    <p>Kashif will get back to you within 1-7 hours</p>
                 </form>
             </div>
         </div>
