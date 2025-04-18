@@ -612,15 +612,37 @@ body {
 
 form input {
     box-shadow: 5px 5px 5px 5px inherit;
-    background-color: inherit;
-    font-style: oblique;
+    border-radius: 25px;
+    background-color: inherit ;
+    color: black;
+    
 }
-
-#submit {
+form select {
+    box-shadow: 5px 5px 5px 5px inherit;
+    border-radius: 25px;
+    background-color: inherit ;
+    color: black;
+}
+form select:hover{
+    background-color: inherit;
+}
+form textarea{
+    box-shadow: 5px 5px 5px 5px inherit;
+    border-radius: 5px;
+    background-color: inherit ;
+    color: black;
+}
+form input[type=submit]{
     background-color: inherit;
     color: #333333;
 }
-
+form input[type=submit] :hover{
+    background-color: yellowgreen;
+    color: cornsilk;
+}
+select{
+    background-color: inherit;
+}
 #gcq {
     background: rgb(240, 245, 245);
     background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
