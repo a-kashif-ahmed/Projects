@@ -1,4 +1,9 @@
-/* Preloader container */
+@font-face {
+    font-family: 'Dots';
+    src: url('./Resources/LED\ Dot-Matrix\ 400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 :root {
     --ani: slideIn 1s ease-in-out
 }
@@ -46,7 +51,7 @@ html {
 
 
 body {
-    background: rgb(240, 245, 245);
+    /* background: rgb(240, 245, 245); */
     background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
     margin: 0%;
     padding: 0%;
@@ -63,6 +68,7 @@ body {
 
 #title {
     padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     background: rgb(240, 245, 245);
     background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
     margin: -1.7%;
@@ -151,12 +157,13 @@ body {
 }
 
 .typing-demo {
-    width: 285px;
+    width: 330px;
     animation: typing 2s steps(15), blink .5s step-end infinite alternate;
     white-space: nowrap;
+    
     overflow: hidden;
     border-right: 3px solid black;
-    font-family: monospace;
+    /* font-family: 'Dots'; */
     font-size: 2em;
 }
 
@@ -164,7 +171,7 @@ body {
     width: auto;
     white-space: nowrap;
     overflow: hidden;
-    font-family: monospace;
+    /* font-family: monospace; */
     font-size: 18px;
     color: #333333;
     /* Example for secondary text */
@@ -215,7 +222,7 @@ body {
     color: #333333;
     /* Example for secondary text */
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Dots','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -779,7 +786,7 @@ footer {
     }
 
     .typing-demo {
-        width: 185px;
+        width: 210px;
         animation: typing 2s steps(15), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
