@@ -372,9 +372,11 @@ body {
 }
 
 #urlp li,
+#zocostop li,
 #blogp li,
 #finalp li,
-#attendp li {
+#attendp li,
+#prodp li {
     padding: .5%;
 
 }
@@ -541,7 +543,9 @@ body {
 #urlp,
 #finalp,
 #attendp,
-#blogp {
+#blogp ,
+#zocostop,
+#prodp {
     padding: 3%;
     margin: 3%;
     background: inherit;
@@ -557,7 +561,9 @@ body {
 }
 
 #urlp a,
-#blogp a {
+#blogp a,
+#zocostop a,
+#prodp a {
     text-decoration: none;
     color: inherit;
 }
@@ -874,7 +880,9 @@ footer {
     #urlp,
     #finalp,
     #attendp,
-    #blogp {
+    #blogp, 
+    #zocostop,
+    #prodp {
         margin: 13%;
         animation: slideIn 1.7s ease-in-out;
     }
