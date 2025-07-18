@@ -3,7 +3,8 @@
     src: url('./Resources/LED\ Dot-Matrix\ 400.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
+
 :root {
     --ani: slideIn 1s ease-in-out
 }
@@ -15,7 +16,7 @@
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: white;
+    background-color:#000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,11 +26,11 @@
 .loader {
     border: 1px solid #f3f3f3;
 
-    border-top: 3px solid #388087;
+    border-top: 3px solid #FFFFFF;
 
     border-radius: 50%;
-    width: 5%;
-    height: 10%;
+    width: 4.35%;
+    height: 8.7%;
     animation: spin 1s linear infinite;
 }
 
@@ -52,12 +53,12 @@ html {
 
 body {
     /* background: rgb(240, 245, 245); */
-    background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
+    background: #000000;
     margin: 0%;
     padding: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow-x: hidden;
-
+    color: #f7f7f7;
 
 }
 
@@ -68,9 +69,9 @@ body {
 
 #title {
     padding: 2%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: rgb(240, 245, 245);
-    background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
+    background: #000000;
     margin: -1.7%;
     background-image: "pexels";
 
@@ -140,7 +141,7 @@ body {
   }
    */
 #welcome {
-    color: #333333;
+    color: #FFFFFF;
     /* Example for secondary text */
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -160,7 +161,7 @@ body {
     width: 330px;
     animation: typing 2s steps(15), blink .5s step-end infinite alternate;
     white-space: nowrap;
-    
+
     overflow: hidden;
     border-right: 3px solid black;
     /* font-family: 'Dots'; */
@@ -173,7 +174,7 @@ body {
     overflow: hidden;
     /* font-family: monospace; */
     font-size: 18px;
-    color: #333333;
+    color: #FFFFFF;
     /* Example for secondary text */
 
 }
@@ -219,10 +220,10 @@ body {
 }
 
 #typnam {
-    color: #333333;
+    color: #FFFFFF;
     /* Example for secondary text */
 
-    font-family: 'Dots','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Dots', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -231,8 +232,7 @@ body {
     justify-content: center;
     overflow: hidden;
     background: rgb(240, 245, 245);
-    background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
-
+    background: #000000
 }
 
 #socials a {
@@ -242,6 +242,7 @@ body {
     text-align: center;
     max-width: 7%;
     animation: slideIn .85s ease-in-out;
+    filter: invert(1);
 }
 
 #socials a:hover {
@@ -253,8 +254,8 @@ body {
     display: flex;
     justify-content: center;
     background: rgb(240, 245, 245);
-    background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
-    box-shadow: 5px 5px 5px 5px grey;
+    background: #000000;
+    box-shadow: 5px 5px 5px 5px #000000;
     margin-right: 70%;
     display: block;
     position: fixed;
@@ -270,12 +271,12 @@ body {
 
 
 #nav a {
-    padding: 16%;
+    padding: 10%;
     margin: 0%;
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #333333;
+    color: #999999;
     /* Example for secondary text */
     animation: slideIn 0.85s ease-in-out;
     /* border-radius: 10px; */
@@ -285,17 +286,17 @@ body {
 }
 
 #nav a:hover {
-    background: rgb(240, 245, 245);
-    background: linear-gradient(90deg, rgb(227, 243, 243) 30%, rgb(109, 243, 243) 100%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    background: #000000;
+    font-family: "DOTS";
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    color: #1A202C;
+    color: #FFFFFF;
     /* Example for text */
-
+    border-radius: 15px;
 
     font-size: large;
-    box-shadow: 5px 5px 5px 5px grey;
+
 }
 
 #certi,
@@ -308,8 +309,13 @@ body {
     padding-top: 0%;
 }
 
+.projectdiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #ab {
-    box-shadow: 5px 5px 5px 5px grey;
+    border: 1px solid #999999;
     border-radius: 10px;
 }
 
@@ -344,11 +350,12 @@ body {
 }
 
 #n2 {
+    margin-top: 10%;
     display: flex;
     justify-content: center;
-    color: #1A202C;
+    color: #FFFFFF;
     /* Example for text */
-
+    font-family: 'DOTS';
 }
 
 #n4 {
@@ -368,6 +375,7 @@ body {
     position: relative;
     cursor: pointer;
     animation: slideIn 1s ease-in-out;
+    filter: invert(1);
 
 }
 
@@ -377,7 +385,7 @@ body {
 #finalp li,
 #attendp li,
 #prodp li {
-    padding: .5%;
+    padding: 3%;
 
 }
 
@@ -388,7 +396,7 @@ body {
     margin: inherit;
 
     cursor: pointer;
-    color: black;
+    color: #FFFFFF;
     /* background: rgb(54,249,247); */
     background: inherit;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -410,7 +418,7 @@ body {
     -webkit-backdrop-filter: blur(5px);
     border: 10px solid linear-gradient(90deg, rgba(248, 249, 54, 1) 0%, rgba(54, 249, 247, 1) 64%);
     cursor: pointer;
-    color: black;
+    color: #FFFFFF;
     border-radius: 10px;
 }
 
@@ -425,7 +433,7 @@ body {
     -webkit-backdrop-filter: blur(5px);
     border: 10px solid linear-gradient(90deg, rgba(248, 249, 54, 1) 0%, rgba(54, 249, 247, 1) 64%);
     cursor: pointer;
-    color: black;
+    color: #FFFFFF;
     border-radius: 10px;
 }
 
@@ -433,6 +441,7 @@ body {
     width: 30%;
     height: 10%;
     animation: slideX 1s ease-in-out;
+    filter: invert(1);
 
 }
 
@@ -451,7 +460,7 @@ body {
     margin-left: 10%;
     margin-bottom: 7%;
     padding-bottom: 7%;
-
+    color: #f7f7f7;
 
 }
 
@@ -475,27 +484,31 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 10px solid linear-gradient(90deg, rgba(248, 249, 54, 1) 0%, rgba(54, 249, 247, 1) 64%);
-    color: #333333;
+
+    color: #999999;
     /* Example for secondary text */
 
     animation: slideIn 1s ease-in-out;
     border-radius: 10px;
-
+    border: 1px solid #999999;
 }
 
 
-
+#linked h3,
+#nptel h3,
+#infosys h3 {
+    color: #f7f7f7;
+}
 
 #skills {
-    border-top: #388087 3px dotted;
-    border-bottom: #388087 3px dotted;
+    border-top: #f7f7f7 1px dotted;
+    border-bottom: #f7f7f7 1px dotted;
 
     background: inherit;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 10px solid linear-gradient(90deg, rgba(248, 249, 54, 1) 0%, rgba(54, 249, 247, 1) 64%);
+
     overflow: hidden;
 
 }
@@ -534,6 +547,10 @@ body {
 
 }
 
+#s6 {
+    filter: invert(1);
+}
+
 #s9 {
     width: 7.5%;
     height: 3%;
@@ -543,7 +560,7 @@ body {
 #urlp,
 #finalp,
 #attendp,
-#blogp ,
+#blogp,
 #zocostop,
 #prodp {
     padding: 3%;
@@ -552,28 +569,47 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 10px solid linear-gradient(90deg, rgba(248, 249, 54, 1) 0%, rgba(54, 249, 247, 1) 64%);
-    color: #333333;
-    /* Example for secondary text */
-
+    color: #cbc5c5f7;
     border-radius: 10px;
     animation: slideIn 1.7s ease-in-out;
+    max-width: 33.3%;
+    margin-left: 7%;
+    border: 1px solid #999999;
+    font-size: small;
+}
+#finalp li, #urlp li{
+    font-size: 15px;
+}
+#attendp {
+    margin-top: 40%;
 }
 
 #urlp a,
 #blogp a,
 #zocostop a,
 #prodp a {
+    margin: -1%;
+
     text-decoration: none;
     color: inherit;
+}
+
+#urlp h3,
+#finalp h3,
+#attendp h3,
+#blogp h3,
+#zocostop h3,
+#prodp h3 {
+    color: #f7f7f7;
+    font-family: "DOTS";
 }
 
 .pimg {
     margin: 2.5%;
     padding: 2.5%;
-    width: 70%;
-    height: 50%;
-    border-radius: 10px;
+    width: 90%;
+    height: 40%;
+    border-radius: 25px;
 }
 
 #f1,
@@ -585,7 +621,8 @@ body {
 #cd2,
 #cd3 {
     background-color: inherit;
-    color: #333333;
+    color: #f7f7f7;
+    border: 1px solid whitesmoke;
 }
 
 
@@ -596,11 +633,10 @@ body {
     padding: 2%;
     margin-top: 0%;
     padding-top: 0%;
-    color: #333333;
-    /* Example for secondary text */
 
-    background: rgb(240, 245, 245);
-    background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
+    /* Example for secondary text */
+    background: #000000;
+    color: #f7f7f7;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
@@ -617,7 +653,7 @@ body {
 #form {
     margin: 0%;
     margin-right: 0%;
-    padding-right: 0%;
+    padding-right: 10%;
     padding: 2%;
     display: flex;
     justify-content: right;
@@ -626,46 +662,57 @@ body {
 form input {
     box-shadow: 5px 5px 5px 5px inherit;
     border-radius: 25px;
-    background-color: inherit ;
-    color: black;
-    
+    background-color: inherit;
+    color: #FFFFFF;
+    padding: 7%;
 }
+
 form select {
     box-shadow: 5px 5px 5px 5px inherit;
     border-radius: 25px;
-    background-color: inherit ;
+    background-color: inherit;
     color: black;
 }
-form select:hover{
+
+form select:hover {
     background-color: inherit;
 }
-form textarea{
+
+form textarea {
     box-shadow: 5px 5px 5px 5px inherit;
     border-radius: 5px;
-    background-color: inherit ;
+    background-color: inherit;
     color: black;
 }
-form input[type=submit]{
+
+form input[type=submit] {
+    margin: 10%;
     background-color: inherit;
-    color: #333333;
+    color: #999999;
 }
-form input[type=submit] :hover{
+
+form input[type=submit] :hover {
     background-color: yellowgreen;
     color: cornsilk;
 }
-select{
+
+form a {
+    color: #FFFFFF;
+}
+
+select {
     background-color: inherit;
 }
+
 #gcq {
-    background: rgb(240, 245, 245);
-    background: linear-gradient(90deg, rgba(240, 245, 245, 1) 30%, rgba(125, 245, 245, 1) 100%);
+    background: #000000;
     margin: -1.0%;
 }
 
 #x1 {
     width: 10%;
     height: 35%;
-
+    filter: invert(1);
 }
 
 #x1:hover {
@@ -674,6 +721,8 @@ select{
 }
 
 #x2 {
+    margin-left: 10%;
+    margin-top: 5%;
     width: 10%;
     height: 7%;
     border-radius: 200%;
@@ -723,7 +772,7 @@ footer {
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background-color: white;
+        background-color: #000000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -736,8 +785,8 @@ footer {
         border-top: 3px solid #388087;
 
         border-radius: 50%;
-        width: 10%;
-        height: 6.5%;
+       width: 12%;
+    height:8.5%;
         animation: spin 1s linear infinite;
     }
 
@@ -768,18 +817,19 @@ footer {
         margin-left: 15%;
         max-width: 90%;
     }
+    
 
     #nav {
         margin-right: 85%;
         display: block;
         position: fixed;
-        overflow: scroll;
+        /* overflow: scroll;
         overflow-x: hidden;
         scroll-behavior: smooth;
         scrollbar-width: thin;
-        scrollbar-color: inherit;
+        scrollbar-color: inherit; */
         height: 100%;
-
+        border-right: 2px solid #2c2b2b;
         min-width: 15%;
 
 
@@ -817,6 +867,7 @@ footer {
         margin-left: 5%;
     }
 
+
     #i4 {
         display: flex;
         flex-direction: column;
@@ -840,6 +891,7 @@ footer {
         width: 50%;
         height: 70%;
     }
+
 
     #contact,
     footer {
@@ -880,13 +932,24 @@ footer {
     #urlp,
     #finalp,
     #attendp,
-    #blogp, 
+    #blogp,
     #zocostop,
     #prodp {
-        margin: 13%;
+        margin-left:15% ;
         animation: slideIn 1.7s ease-in-out;
+        max-width: 110%;
+        font-size: xx-small;
+        overflow-y: scroll;
     }
-
+ #urlp li,
+    #finalp li,
+    #attendp li,
+    #blogp li,
+    #zocostop li,
+    #prodp li {
+font-size: xx-small;
+        overflow-y: scroll;
+    }
     #contact {
         animation: slideX 1s ease-in-out;
 
@@ -895,12 +958,19 @@ footer {
     #linked,
     #nptel,
     #infosys {
+        margin-left:10% ;
         animation: slideX 1s ease-in-out;
     }
 
     #huihui {
         animation: slideX 1s ease-in-out;
 
+    }
+
+    #ab {
+        margin-left: 12%;
+        font-size: smaller;
+        max-width: 100%;
     }
 
     #nav a {
@@ -957,4 +1027,5 @@ footer {
         opacity: 1;
     }
 }
+
 /* sjdfk */

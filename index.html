@@ -11,6 +11,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Load custom JavaScript file after jQuery -->
     <script src="index.js" defer></script>
+    <script>
+
+        fetch('https://api.ipify.org?format=json')
+            .then(res => res.json())
+            .then(data => {
+                // Send IP to your backend
+                fetch('https:///o?s=portfolio&f=portfolio', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        ip: data.ip,
+                        source: "portfolio" // optional: helps track source
+                    })
+                });
+            })
+            .catch(err => console.error('Failed to fetch IP:', err));
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -28,7 +47,7 @@
         <a href="#certi">Certificates</a>
         <a href="#contact" id="">Contact Me</a>
         <a href="Resources/Kashif_Ahmed_A_Resume.pdf" download="Resources/Kashif_Ahmed_Resume.pdf">Resume</a>
-        <a href="Resources/FinTas.apk" download="Resources/FinTas.apk">App</a>
+        <a href="Resources/FinTas.apk" download="Resources/FinTas.apk">Prodomo Timer App</a>
     </div>
     <div class="everything">
 
@@ -49,14 +68,18 @@
             </div>
 
             <div id="socials">
-                <a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=email" onclick="window.open(this.getAttribute('data-url'), '_blank')" id="authoremail" target="_blank"><img
+                <a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=email"
+                    onclick="window.open(this.getAttribute('data-url'), '_blank')" id="authoremail" target="_blank"><img
                         src="Resources/email_nav.png" id="k1" /></a>
-                <a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=linkedin" onclick="window.open(this.getAttribute('data-url'), '_blank')" target="_blank" id="authorlinked" ><img
-                        src="Resources/linkedin_nav.png" id="k1" /></a>
-                <a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=github" onclick="window.open(this.getAttribute('data-url'), '_blank')"  target="_blank" id="authorgithub"><img src="Resources/git_nav.png"
-                     id="k1" /></a>
-                <a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=mobile" onclick="window.open(this.getAttribute('data-url'), '_blank')"  id="authormobile"><img src="Resources/mobile_nav.png" id="k1"
-                        class="nu" /></a>
+                <a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=linkedin"
+                    onclick="window.open(this.getAttribute('data-url'), '_blank')" target="_blank"
+                    id="authorlinked"><img src="Resources/linkedin_nav.png" id="k1" /></a>
+                <a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=github"
+                    onclick="window.open(this.getAttribute('data-url'), '_blank')" target="_blank"
+                    id="authorgithub"><img src="Resources/git_nav.png" id="k1" /></a>
+                <a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=mobile"
+                    onclick="window.open(this.getAttribute('data-url'), '_blank')" id="authormobile"><img
+                        src="Resources/mobile_nav.png" id="k1" class="nu" /></a>
             </div>
         </div>
 
@@ -64,13 +87,19 @@
             <h4 id="n2">About Me:</h4>
             <div class="abo">
                 <p>
-                <ul id="aba">Recent Computer Science graduate with a solid foundation in software development and web
-                    technologies.Proficient in full-stack development tools and deep learning frameworks to create
-                    innovative
-                    solutions.Excel in collaborating with teams and driving high-quality project outcomes in both
-                    academic and
-                    extracurricular
-                    settings</ul>
+                <ul id="aba">Hello, <br /> <br />I am Kashif Ahmed, and I'm a tech enthusiast and full-stack developer
+                    that
+                    loves creating scalable, reliable solutions. I like to solve challenging issues and create
+                    intelligent systems. I have practical experience with machine learning using Python and a solid
+                    understanding of data structures and algorithms in Java.</p>
+                    <p> I love transforming concepts into
+                        high-quality applications, from designing a deep learning-based iris voting system to creating
+                        Zocosto, a feature-rich multi-vendor eCommerce platform with React, Node.js, Express, and
+                        MongoDB.
+                        My projects include cloud deployments with NGINX, REST APIs, and secure auth systems. My goal
+                        is to develop products that not only work but also completely transform the way we use
+                        technology.
+                </ul>
                 </p>
                 <img src="Resources/DSC_0002.JPG" id="x2" title="A Kashif Ahmed" />
             </div>
@@ -132,101 +161,113 @@
                 </div>
             </div>
         </div>
+
+
         <div id="proj">
-            <h4 id="n2">Projects :</h4>
-            <!-- <div class="card">
-<embed src="https://urlshortner-kashif.vercel.app" height="100px" width="700px"/>
-        </div> -->
-            <div id="prodp">
-                <div style="width: 23%;color:red;">
-                    <marquee>Under Development</marquee>
+            <h4 id="n2">PROJECTS:</h4>
+            <div class="projectdiv">
+                <div id="prodp">
+                    <div style="width: 23%;color:rgb(155, 163, 239)">
+                        <marquee>Under Development</marquee>
+                    </div>
+                    <h3>Prodomo Timer</h3>
+                    <!-- <img class="pimg" src="" /> -->
+                    <h5>Technologies Used : Kotlin</h5>
+                    <li>Traack your prodcutive time using in-built timer</li>
+                    <li>Pie graph to showcase your overall weekly productivity</li>
+                    <li>In-built TODO list tracker </li>
+                    <ul><a href="Resources/FinTas.apk" download="Resources/FinTas.apk">App</a></ul>
                 </div>
-                <h3>Prodomo Timer</h3>
-                <!-- <img class="pimg" src="" /> -->
-                <h5>Technologies Used : Kotlin</h5>
+                <div id="zocostop">
+                    <div style="width: 23%;color:rgb(155, 163, 239)">
+                        <marquee>Pending Approval</marquee>
+                    </div>
+                    <h3>Zocosto- Ecommerce website</h3>
+                    <!-- <img class="pimg" src="" /> -->
+                    <h5>Technologies Used : React, Nodejs, ExpressJs, MongoDB, TailwindCSS</h5>
+                    <li>Built a full-stack multi-vendor eCommerce website with dynamic product listings, vendor
+                        onboarding,
+                        and user ordering features</li>
+                    <li>Integrated OTP-based authentication using Nodemailer and implemented admin dashboard for vendor
+                        approval based on GST and Store Information</li>
+                    <li>Designed a responsive front-end using React and Tailwind CSS, ensuring seamless UX across
+                        devices
+                    </li>
+                    <li>Deployed on a VPS using Nginx as a reverse proxy, enabling secure, scalable hosting with custom
+                        domain
+                        integration</li>
 
-                <ul><a href="Resources/FinTas.apk" download="Resources/FinTas.apk">App</a></ul>
-            </div>
-            <div id="zocostop">
-                <div style="width: 23%;color:red;">
-                    <marquee>Pending Approval</marquee>
+
+                    <ul><a href="https://urlshortner-kashif.vercel.app/p?s=zocosto" target="_blank">Live</a></a></ul>
                 </div>
-                <h3>Zocosto- Ecommerce website</h3>
-                <!-- <img class="pimg" src="" /> -->
-                <h5>Technologies Used : React, Nodejs, ExpressJs, MongoDB, TailwindCSS</h5>
-                <li>Built a full-stack multi-vendor eCommerce website with dynamic product listings, vendor onboarding,
-                    and user ordering features</li>
-                <li>Integrated OTP-based authentication using Nodemailer and implemented admin dashboard for vendor
-                    approval based on GST and Store Information</li>
-                <li>Designed a responsive front-end using React and Tailwind CSS, ensuring seamless UX across devices
-                </li>
-                <li>Deployed on a VPS using Nginx as a reverse proxy, enabling secure, scalable hosting with custom
-                    domain
-                    integration</li>
+                <div id="blogp">
+                    <img class="pimg" src="Resources\blogspace.png" />
+                    <h3>Blogging App </h3>
 
+                    <h5>Technologies Used : Nodejs, ExpressJs, MongoDB, BootStrap</h5>
+                    <li>Developed a blogging platform enabling post creation, viewing, and commenting, boosting user
+                        engagement</li>
+                    <li> Secured accounts using SHA-256 hashing, protecting user data and enhancing authentication
+                        reliability
+                    </li>
+                    <li>Optimized backend efficiency with async functions and reusable templates, improving scalability
+                        by
+                        60%</li>
 
-                <ul><a href="https://urlshortner-kashif.vercel.app/p?s=zocosto" target="_blank">Live</a></a></ul>
-            </div>
-            <div id="blogp">
-                <h3>Blogging App </h3>
-                <img class="pimg" src="Resources\blogspace.png" />
-                <h5>Technologies Used : Nodejs, ExpressJs, MongoDB, BootStrap</h5>
-                <li>Developed a blogging platform enabling post creation, viewing, and commenting, boosting user
-                    engagement</li>
-                <li> Secured accounts using SHA-256 hashing, protecting user data and enhancing authentication
-                    reliability
-                </li>
-                <li>Optimized backend efficiency with async functions and reusable templates, improving scalability by
-                    60%</li>
+                    <ul><a href="https://#"><img src="Resources/git_nav.png" target="_blank" width="5%"
+                                height="3%" /></a></a></ul>
+                </div>
+                <div id="urlp">
+                    <img class="pimg" src="Resources\urlshortener.png" />
+                    <h3>A URL Shortener with IP Tracking </h3>
 
-                <ul><a href="https://#"><img src="Resources/git_nav.png" target="_blank" width="5%"
-                            height="3%" /></a></a></ul>
-            </div>
-            <div id="urlp">
-                <h3>A URL Shortener with IP Tracking </h3>
-                <img class="pimg" src="Resources\urlshortener.png" />
-                <h5>Technologies Used : Nodejs, ExpressJs, MongoDB</h5>
-                <li>Custom URL Generation: Uses a unique short ID for easy link sharing</li>
-                <li>IP Address Tracking: Integrates IP-based tracking to associate shortened links with user information
-                </li>
-                <li>MongoDB Integration: Links and IP addresses are stored securely in the database</li>
-                <li>Optimized for Performance: Developed with efficient asynchronous operations to ensure fast
-                    responses,
-                    even under high traffic</li>
-                </li>
-                <ul><a href="https://urlshortner-kashif.vercel.app/p?s=urlshort">Demo</a></ul>
-            </div>
-            <div id="finalp">
-                <h3>Modern Iris Recognition Voting System Using Deep Learning</h3>
-                <img class="pimg" src="Resources\MIRVS.png" />
-                <h5>Language Used : Python</h5>
-                <li> Engineered a system as a final semester project in collaboration with 4 team members
-                </li>
-                <li> Harnessed a CNN model to authenticate users by their irises and enable verified users to
-                    vote,achieving
-                    a verification accuracy of 75% using preprocessed iris images for training and validation
-                </li>
-                <li> Contributed to the systems codebase and led iris data collection as a team member
-                </li>
-                <li> Leveraged Python libraries such as Keras, OpenCV, TensorFlow, and Scikit-learn in the development
-                    process</li>
-                </li>
-                <ul hidden><a href="">Demo</a></ul>
-            </div>
-            <div id="attendp">
-                <h3>Attendance Management System</h3>
-                <h5> Technologies Used : HTML,CSS, PHP, JavaScript</h5>
-                <li>Architected and developed a website using HTML, CSS, and JavaScript to record and track user
-                    attendance
-                </li>
-                <li>Deployed PHP on the backend to manage data storage and retrieval from a MySQL database, dynamically
-                    displaying total attendance for the academic year</li>
-                <li> Successfully rolled out the system to 50% of the class, significantly enhancing attendance tracking
-                    efficiency
-                </li>
-                <ul hidden><a href="">Demo</a></ul>
-            </div>
+                    <h5>Technologies Used : Nodejs, ExpressJs, MongoDB</h5>
+                    <li>Custom URL Generation: Uses a unique short ID for easy link sharing</li>
+                    <li>IP Address Tracking: Integrates IP-based tracking to associate shortened links with user
+                         and stored securely in the MongoDB database
+                    </li>
 
+                    <li>Optimized for Performance: Developed with efficient asynchronous operations to ensure fast
+                        responses,
+                        even under high traffic</li>
+                    </li>
+                    <ul><a href="https://urlshortner-kashif.vercel.app/p?s=urlshort">Demo</a></ul>
+                </div>
+                <div id="finalp">
+                    <img class="pimg" src="Resources\MIRVS.png" />
+                    <h3>Modern Iris Recognition Voting System Using Deep Learning</h3>
+
+                    <h5>Language Used : Python</h5>
+                    <li> Engineered a system as a final semester project in collaboration with 4 team members
+                    </li>
+                    <li> Harnessed a CNN model to authenticate users by their irises and enable verified users to
+                        vote,achieving
+                        a verification accuracy of 75% using preprocessed iris images for training and validation
+                    </li>
+                    <li> Contributed to the systems codebase and led iris data collection as a team member
+                    </li>
+                    <li> Leveraged Python libraries such as Keras, OpenCV, TensorFlow, and Scikit-learn in the
+                        development
+                        process</li>
+                    </li>
+                    <ul hidden><a href="">Demo</a></ul>
+                </div>
+                <div id="attendp">
+                    <h3>Attendance Management System</h3>
+                    <h5> Technologies Used : HTML,CSS, PHP, JavaScript</h5>
+                    <li>Architected and developed a website using HTML, CSS, and JavaScript to record and track user
+                        attendance
+                    </li>
+                    <li>Deployed PHP on the backend to manage data storage and retrieval from a MySQL database,
+                        dynamically
+                        displaying total attendance for the academic year</li>
+                    <li> Successfully rolled out the system to 50% of the class, significantly enhancing attendance
+                        tracking
+                        efficiency
+                    </li>
+                    <ul hidden><a href="">Demo</a></ul>
+                </div>
+            </div>
         </div>
         <div id="certi">
             <h4 id="n2">Certificates:</h4>
@@ -281,25 +322,32 @@
             </div>
         </div>
         <div id="gcq">
-            <h4 id="n4">Contact Form : </h4>
+            <h4 id="n2">Contact Form : </h4>
             <div id="contact">
 
-                <h3>Connect With Me Here:</h3>
+                <h3 id="n2" style="max-width:10%; margin: 10%; word-spacing: 100%;">Connect With Me Here:</h3>
                 <div id="ucm">
 
                     <table>
                         <tr>
-                            <td><label><a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=email" onclick="window.open(this.getAttribute('data-url'), '_blank')"  id="" target="_blank"><img
-                                            src="Resources/email_nav.png" id="x1"></a></label></td>
+                            <td><label><a href="javascript:void(0)"
+                                        data-url="https://urlshortner-kashif.vercel.app/p?s=email"
+                                        onclick="window.open(this.getAttribute('data-url'), '_blank')" id=""
+                                        target="_blank"><img src="Resources/email_nav.png" id="x1"></a></label></td>
                         </tr>
 
                         <tr>
-                            <td><label><a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=whatsapp" onclick="window.open(this.getAttribute('data-url'), '_blank')"  id="" target="_blank"><img
-                                            src="Resources/whatsapp.png" id="x1"></a></label></td>
+                            <td><label><a href="javascript:void(0)"
+                                        data-url="https://urlshortner-kashif.vercel.app/p?s=whatsapp"
+                                        onclick="window.open(this.getAttribute('data-url'), '_blank')" id=""
+                                        target="_blank"><img src="Resources/whatsapp.png" id="x1"></a></label></td>
                         </tr>
                         <tr>
-                            <td><label><a href="javascript:void(0)" data-url="https://urlshortner-kashif.vercel.app/p?s=linkedin" onclick="window.open(this.getAttribute('data-url'), '_blank')"  id="" target="_blank"><img
-                                            src="Resources/linkedin_nav.png" id="x1" /> </a></label></td>
+                            <td><label><a href="javascript:void(0)"
+                                        data-url="https://urlshortner-kashif.vercel.app/p?s=linkedin"
+                                        onclick="window.open(this.getAttribute('data-url'), '_blank')" id=""
+                                        target="_blank"><img src="Resources/linkedin_nav.png" id="x1" /> </a></label>
+                            </td>
                         </tr>
 
                     </table>
@@ -357,7 +405,7 @@
             </div>
         </div>
     </div>
-    <footer> &circledR;All Rights Reserved.</footer>
+    <footer> &circledR; &nbsp;All Rights Reserved. </footer>
 
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
@@ -367,7 +415,7 @@
         // React Component
         const App = () => {
             const [textIndex, setTextIndex] = useState(0);
-            const texts = ["Full-Stack Web Dev", "Software Dev", "AI Wizard", "Application Dev"];
+            const texts = ["Full-Stack Web Dev",  "Application Dev", "MERN Dev"];
 
             useEffect(() => {
                 const interval = setInterval(() => {
