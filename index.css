@@ -577,9 +577,7 @@ body {
     border: 1px solid #999999;
     font-size: small;
 }
-#finalp li, #urlp li{
-    font-size: 15px;
-}
+
 #attendp {
     margin-top: 40%;
 }
@@ -947,7 +945,7 @@ footer {
     #blogp li,
     #zocostop li,
     #prodp li {
-font-size: xx-small;
+font-size:small;
         overflow-y: scroll;
     }
     #contact {
