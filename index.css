@@ -1046,4 +1046,26 @@ font-size:small;
     }
 }
 
-/* sjdfk */
+@media only screen and (max-width: 1000px) {
+     #skills {
+        margin-left: 27px;
+        overflow: hidden;
+
+    }
+
+        #skillset img{
+        margin-left: -1.5%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+     #skills {
+        margin-left: 27px;
+        overflow: hidden;
+
+    }
+
+        #skillset img{
+        margin-left: -1.3%;
+    }
+}
