@@ -502,8 +502,8 @@ body {
 
 #skills {
     border-top: #f7f7f7 1px dotted;
-    border-bottom: #f7f7f7 1px dotted;
-
+    border-bottom: hsl(0, 0%, 97%) 1px dotted;
+    white-space: nowrap;
     background: inherit;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -514,17 +514,33 @@ body {
 }
 
 #skillset {
-    display: flex;
+    display: inline-block;
     position: relative;
-    animation: moc 5s linear infinite;
+      animation: scroll-left 12s linear infinite;
 
 }
+#skillset img {
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding-left: 1%;
+}
 
-#skillset:hover {
+#skill img:hover {
     cursor: pointer;
     animation-play-state: paused;
 
 }
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
 
 /* .card {  
     box-shadow: 2px 6px 8px 2px rgba(0,0,0,0.2);  
@@ -975,7 +991,9 @@ font-size:small;
 
         animation: slideIn 0.85s ease-in-out;
     }
-
+    #skillset img{
+        margin-left: -2.2%;
+    }
     @keyframes slideIn {
         0% {
             transform: translateY(75%);
@@ -998,7 +1016,9 @@ font-size:small;
             transform: translateX(0);
             opacity: 1;
         }
+
     }
+
 
 }
 
