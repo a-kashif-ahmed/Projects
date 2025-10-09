@@ -384,7 +384,7 @@ body {
 #blogp li,
 #finalp li,
 #attendp li,
-#prodp li {
+#prodp li, #paynounce li {
     padding: 3%;
 
 }
@@ -578,7 +578,7 @@ body {
 #attendp,
 #blogp,
 #zocostop,
-#prodp {
+#prodp,#paynouncep {
     padding: 3%;
     margin: 3%;
     background: inherit;
@@ -601,19 +601,20 @@ body {
 #urlp a,
 #blogp a,
 #zocostop a,
-#prodp a {
+#prodp a, #paynounce a {
     margin: -1%;
-
     text-decoration: none;
     color: inherit;
+    
 }
+
 
 #urlp h3,
 #finalp h3,
 #attendp h3,
 #blogp h3,
 #zocostop h3,
-#prodp h3 {
+#prodp h3, #paynouncep h3 {
     color: #f7f7f7;
     font-family: "DOTS";
 }
@@ -948,7 +949,7 @@ footer {
     #attendp,
     #blogp,
     #zocostop,
-    #prodp {
+    #prodp , #paynouncep {
         margin-left:15% ;
         animation: slideIn 1.7s ease-in-out;
         max-width: 110%;
@@ -960,7 +961,7 @@ footer {
     #attendp li,
     #blogp li,
     #zocostop li,
-    #prodp li {
+    #prodp li, #paynounce li {
 font-size:small;
         overflow-y: scroll;
     }
