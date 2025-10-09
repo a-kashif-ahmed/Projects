@@ -29,6 +29,8 @@
                 });
             })
             .catch(err => console.error('Failed to fetch IP:', err));
+
+
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -44,7 +46,7 @@
         <a href="#skill" id="">Skills</a>
         <a href="#edu">Education</a>
         <a href="#proj">Projects</a>
-        <a href="">Freelance Contributions</a>
+        <a href="#freelance">Freelance</a>
         <a href="#certi">Certificates</a>
         <a href="#contact" id="">Contact Me</a>
         <a href="Resources/Kashif_Ahmed_A_Resume.pdf" download="Resources/Kashif_Ahmed_Resume.pdf">Resume</a>
@@ -239,7 +241,7 @@
                     <li>In-built TODO list tracker </li>
                     <ul><a href="Resources/FinTas.apk" download="Resources/FinTas.apk">App</a></ul>
                 </div>
-            
+
                 <div id="zocostop">
                     <!-- <div style="width: 23%;color:rgb(155, 163, 239)">
                         <marquee>Pending Approval</marquee>
@@ -330,6 +332,18 @@
                     <ul hidden><a href="">Demo</a></ul>
                 </div>
             </div>
+        </div>
+        <div id="freelance">
+            <h4 id="n2">FREELANCE:</h4>
+            <button id="openDialogBtn">Show</button>
+
+            <dialog id="myDialog">
+                <div id="diahead"><h2 id="n2">Freelance Contributions:</h2><button id="closeDialogBtn">X</button></div>
+                <p>Coming Soon..</strong>.</p>
+                
+            </dialog>
+
+
         </div>
         <div id="certi">
             <h4 id="n2">Certificates:</h4>
@@ -488,12 +502,32 @@
 
             return React.createElement('h4', null, texts[textIndex]);
         };
-      
+
 
         const root = ReactDOM.createRoot(document.getElementById('react-root'));
         root.render(React.createElement(App));
+        const openDialogBtn = document.getElementById('openDialogBtn');
+        const closeDialogBtn = document.getElementById('closeDialogBtn');
+        const myDialog = document.getElementById('myDialog');
+
+        openDialogBtn.addEventListener('click', () => {
+            document.body.classList.add('blur'); // blur everything
+            myDialog.showModal();
+        });
+
+        closeDialogBtn.addEventListener('click', () => {
+            myDialog.close();
+            document.body.classList.remove('blur'); // remove blur
+        });
+
+        // Also remove blur when user clicks outside or presses Esc
+        myDialog.addEventListener('close', () => {
+            document.body.classList.remove('blur');
+        });
+
     </script>
 
 </body>
+
 
 </html>

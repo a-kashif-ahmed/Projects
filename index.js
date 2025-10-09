@@ -14,6 +14,8 @@ $(document).ready(  async function () {
     $("#nu").hide();
 })
 $(document).ready(  async function () {
+    
+
     // $("#e4").mouseover(function () {
     //     $("#e4").hide();
     //     $("#r6").toggle();
