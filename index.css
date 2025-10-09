@@ -514,9 +514,9 @@ body {
 }
 
 #skillset {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
-      animation: scroll-left 12s linear infinite;
+    animation: scroll-left 12s linear infinite;
 
 }
 #skillset img {
