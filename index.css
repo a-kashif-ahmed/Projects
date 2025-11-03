@@ -753,7 +753,17 @@ h6{
     animation: slideX 1s ease-in-out;
 
 }
-
+#n0{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    /* Example for text */
+    font-family: 'DOTS';
+    font-weight: 900;
+    display: flex;
+    
+}
 
 #ucm {
     display: flex;
@@ -825,9 +835,10 @@ select {
     filter: invert(1);
 }
 
-#x1:hover {
-    width: 15%;
-    height: 20%;
+    #contactlogos a :hover {
+
+    width: 40%;
+    height: 25%;
 }
 
 #x2 {
@@ -935,7 +946,23 @@ footer {
         
         
     }
+    #contactlogos{
+        margin-top: 12%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #contactlogos img {
+    margin: 22%;
+    height: 17%;
+    width: 50%;
+    filter: invert(1);
+}
+
 @media only screen and (max-width: 500px) {
+    #nptel li, #infosys li, #linked li {
+        list-style: none;
+    }
   #preloader {
     position: fixed;
     inset: 0;
@@ -1070,12 +1097,12 @@ footer {
         padding-left: 5%;
     }
 
-    #x1 {
-        width: 70%;
-        height: 50%;
+        #contactlogos img {
+        width: 50%;
+        height: 40%;
     }
 
-    #x1:hover {
+    #contactlogos :hover {
         width: 90%;
         height: 70%;
     }
@@ -1256,6 +1283,20 @@ font-size:small;
         #skillset img{
         margin-left: -2.5%;
      
+    }
+    #contact {
+        margin-left: 17%;
+        font-size: small;
+    }
+    #n0{
+        margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    /* Example for text */
+    font-family: 'DOTS';
+    font-weight: 900;
+
     }
 }
 @media only screen and (min-width: 300px) and (max-width: 700px) {
