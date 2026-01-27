@@ -95,24 +95,24 @@ $(document).ready(async function () {
     })
 })
 
-    // $("#arrow1").mouseover(function () {
-    //     $("#c1").toggle();
-    // })
-    // $("#arrow1").mouseleave(function () {
-    //     $("#c1").hide();
-    // })
-    // $("#arrow2").mouseover(function () {
-    //     $("#c2").toggle();
-    // })
-    // $("#arrow2").mouseleave(function () {
-    //     $("#c2").hide();
-    // })
-//})
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("@medi");
-//     divs.forEach(div => {
-//         div.classList.toggle('dark-mode');
-//     });
+    $("#arrow1").mouseover(function () {
+        $("#c1").toggle();
+    })
+    $("#arrow1").mouseleave(function () {
+        $("#c1").hide();
+    })
+    $("#arrow2").mouseover(function () {
+        $("#c2").toggle();
+    })
+    $("#arrow2").mouseleave(function () {
+        $("#c2").hide();
+    })
 
-//  }
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("@medi");
+    divs.forEach(div => {
+        div.classList.toggle('dark-mode');
+    });
+
+ }

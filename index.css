@@ -330,6 +330,8 @@ body.blur  {
     min-width: 15%;
     height: 100%;
     -webkit-overflow-scrolling: inherit;
+    
+    
 
 }
 
@@ -954,7 +956,7 @@ footer {
     }
     #contactlogos img {
     margin: 22%;
-    height: 17%;
+    height: 14%;
     width: 50%;
     filter: invert(1);
 }
@@ -962,6 +964,9 @@ footer {
 @media only screen and (max-width: 500px) {
     #nptel li, #infosys li, #linked li {
         list-style: none;
+    }
+    #react-root{
+        font-size: small    ;
     }
   #preloader {
     position: fixed;
@@ -1027,6 +1032,7 @@ footer {
         border-right: 2px solid #2c2b2b;
         min-width: 15%;
         
+        
 
 
     }
@@ -1034,7 +1040,9 @@ footer {
     #nav a {
         padding-bottom: 25%;
         padding-top: 25%;
-        padding-left: .2%;
+        padding-left: 5%;
+        font-size: smaller;
+        
     }
 
     .typing-demo {

@@ -53,7 +53,7 @@
         <a href="#certi">Certificates</a>
         <a href="#contact" id="">Contact Me</a>
         <a href="Resources/Kashif_Ahmed_Resume.pdf" download="Resources/Kashif_Ahmed_Resume.pdf">Resume</a>
-        <a href="Resources/paynounce.apk" download="Resources/paynounce.apk">Paynounce - UPI Alerts</a>
+        <a href="Resources/paynounce.apk" download="Resources/paynounce.apk">Paynounce App</a>
         <a href="Resources/FinTas.apk" download="Resources/FinTas.apk">Prodomo Timer App</a>
     </div>
     <div class="everything">
@@ -102,7 +102,7 @@ I've developed everything from a Voting System that uses deep learning and iris 
                     <p> In order to create solutions that truly have an impact, I like combining my strong foundation in data structures and algorithms (Java) with machine learning in Python. Great code, in my opinion, is about creating something that changes how people interact with technology, not just about making it work.
                 </ul>
                 </p>
-                <img src="Resources/DSC_0002.JPG" id="x2" title="A Kashif Ahmed" />
+                <img src="Resources/Profile.png" id="x2" title="A Kashif Ahmed" />
             </div>
         </div>
         <div id="skill"></div>
@@ -341,8 +341,10 @@ I've developed everything from a Voting System that uses deep learning and iris 
             <button id="openDialogBtn">Show</button>
 
             <dialog id="myDialog">
-                <div id="diahead"><h2 id="n2">Freelance Contributions:</h2><button id="closeDialogBtn">X</button></div>
-                <p>Coming Soon..</strong>.</p>
+                <div id="diahead"><h2 id="n2">Freelance Contributions:</h2><button id="closeDialogBtn">X</button></div> 
+                <div>
+                    <h4>Hey Welcome</h4>
+                </div>
                 
             </dialog>
 
@@ -437,13 +439,13 @@ I've developed everything from a Voting System that uses deep learning and iris 
                             </tr>
                             <tr>
                                 <td>Subject :</td>
-                                <td><input id="subject" name="subject" type="text" placeholder="Subject" required />
+                                <td><input  id="subject" name="subject" type="text" placeholder="Subject" required />
                                 </td>
                             </tr>
                             <tr>
                                 <td>Requirement :</td>
-                                <td><select name="service" id="service-type" required>
-                                        <option value="default">Select</option>
+                                <td ><select  style="border: 1px dotted white; color: gray;" name="service" id="service-type" required>
+                                        <option  value="default">Select</option>
                                         <option value="Website_dev">Develop a website</option>
                                         <option value="App_dev">Develop an App</option>
                                         <option value="fix_bugs">Fix broken app/site</option>
@@ -453,7 +455,7 @@ I've developed everything from a Voting System that uses deep learning and iris 
                             <tr>
                                 <td>Mini Description : </td>
                                 <td>
-                                    <textarea name="desc" rows="3" cols="20"></textarea>
+                                    <textarea style="color: gray;" placeholder="Describe in few words" name="desc" rows="3" cols="20"></textarea>
                                 </td>
                             </tr>
                             <tr>
@@ -466,9 +468,9 @@ I've developed everything from a Voting System that uses deep learning and iris 
                             </tr>
                         </table>
                         <a id="alt-form" target="_blank" href="https://forms.gle/vG2RDLKGYiDv5XgL6">
-                            <p>Form not working?</p>
+                            <p>Form not working? Click</p>
                         </a>
-                        <p>Kashif will get back to you soon.</p>
+                        
                     </form>
                 </div>
             </div>
@@ -493,7 +495,7 @@ I've developed everything from a Voting System that uses deep learning and iris 
                 return () => clearInterval(interval); // Cleanup interval on unmount
             }, []);
 
-            return React.createElement('h5', null, texts[textIndex]);
+            return React.createElement('h4', null, texts[textIndex]);
         };
 
 
