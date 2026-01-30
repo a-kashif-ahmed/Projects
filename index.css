@@ -1242,12 +1242,12 @@ padding: 1%;
         overflow-x: scroll;
         
         scroll-behavior: smooth;
-        /*scrollbar-width: thin;
-        scrollbar-color: inherit; */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(229, 235, 233, 0.6);
         height: 100%;
         border-right: 2px solid #2c2b2b;
         
-        height: 3%;
+        height: 4%;
         width: 100%;
         z-index: 10;
 
@@ -1259,7 +1259,7 @@ padding: 1%;
         /* padding-bottom: 25%;
         padding-top: 25%;
         padding-left: 5%;*/
-        font-size: 1%;
+        font-size: 2%;
 
     }
 
