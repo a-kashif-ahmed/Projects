@@ -467,9 +467,6 @@ h6 {
     margin-top: 4%;
 }
 
-#proj {
-    /* margin-top: 1%; */
-}
 
 
 #k1 {
@@ -682,7 +679,7 @@ h6 {
 
 @keyframes scroll-left {
     from {
-        transform: translateX(0%);
+        transform: translateX(7%);
     }
 
     to {
@@ -1249,8 +1246,8 @@ padding: 1%;
         scrollbar-color: inherit; */
         height: 100%;
         border-right: 2px solid #2c2b2b;
-        font: xx-small;
-        height: 5%;
+        
+        height: 3%;
         width: 100%;
         z-index: 10;
 
@@ -1262,7 +1259,7 @@ padding: 1%;
         /* padding-bottom: 25%;
         padding-top: 25%;
         padding-left: 5%;*/
-        font-size: smaller;
+        font-size: 1%;
 
     }
 
@@ -1441,6 +1438,10 @@ padding: 1%;
         }
 
     }
+    .contact-item span {
+  font-size: .6rem;
+  font-weight: 500;
+}
 
 
 }
@@ -1472,7 +1473,7 @@ padding: 1%;
 @media only screen and (max-width: 1000px) {
     
     nav {
-        font-size: 5px;
+        font-size: 50%;
 
     }
     .pimg{
@@ -1503,9 +1504,7 @@ padding: 1%;
 
     }
 
-    #skillset img {
-        
-    }
+   
     #edu{
         margin: auto;
         margin-left: 10%;
@@ -1554,10 +1553,7 @@ padding: 1%;
         flex-wrap: wrap;
         font-size: small;
     }
-    #contact-item {
-        
-        
-    }
+ 
 
     #n0 {
         margin-top: 10%;

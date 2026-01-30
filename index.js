@@ -6,6 +6,7 @@ $.preloadImages = function(){
     $("<img />").attr("src",arguments[i]);
     }
 }
+// sdf
 $.preloadImages("grad.png");
 // // $(document).ready(  async function () {
 // //     $("#r6").hide();
