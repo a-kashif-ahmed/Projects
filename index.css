@@ -1324,7 +1324,9 @@ padding: 1%;
         
         padding-left: 5%;
     }
-
+    footer{
+        font-size: xx-small;
+    }
     #contactlogos img {
         width: 50%;
         height: 40%;
