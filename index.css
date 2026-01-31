@@ -1055,8 +1055,12 @@ footer {
 }
 
 #openDialogBtn {
+    
+    display: flex;
+    justify-content: center;
+    margin: auto;
     margin-top: 3%;
-    margin-left: 45%;
+    /* margin-left: 45%; */
     padding: 12px 24px;
     border: 2px dotted white;
     border-radius: 8px;
