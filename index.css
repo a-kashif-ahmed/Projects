@@ -890,10 +890,10 @@ iframe {
 #cd3 {
     display: inline-block;
     padding: 10px 20px;
-    color: #ccc9c4;
+    color: #c5a059;
     /* Using that premium muted gold */
     text-decoration: none;
-    border: 1px solid #93e7f1;
+    border: 1px solid #c5a059;
     border-radius: 4px;
     /* Slight roundness looks more modern than sharp corners */
     font-size: 0.9rem;
